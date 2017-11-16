@@ -1,0 +1,36 @@
+{% extends 'nav.html' %}
+{% block body %}
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='menustyle.css') }}">
+    </head>
+
+    <h2>Menu</h2>
+
+    <form action = "{{url_for('addcart_page')}}" method = "POST">
+        <table class = "sturdy">
+
+            <td></td>
+
+            <td>
+                {% for info in iteminfo %}
+                <table class = "sturdy2">
+                    <td>
+                    <img style="width: 155px; height:130px"src={{ info[2]}}>
+                    </td>
+
+                    <td>
+                    <h4>{{ info[1]}}</h4>
+                    <p>{{ info[3]}}</p>
+                    </td>
+
+                    <td>
+                        <button type="submit" value={{ info[0] }} name="add">Add to Cart</button>
+                    </td>
+                </table>
+                {% endfor %}
+            </td>
+
+            <td></td>
+        </table>
+    </form>
+{% endblock %}

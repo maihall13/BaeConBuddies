@@ -1,0 +1,27 @@
+{% extends 'nav.html' %}
+{% block body %}
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='checkoutstyle.css') }}">
+    </head>
+    <h2 style="margin-left: 40%; font-family: 'Copperplate Gothic Light'; font-size: 36px; color: #06233b; padding: 0px 0px 0px 0px">Create Account</h2>
+
+    <form action = "{{url_for('newuser_profile_page')}}" method = "POST">
+        <table class = "sturdy">
+            <td></td>
+            <td>
+                {{ error }}
+                Name: <input type="text" name="name" required >
+                <p></p>
+                Email: <input type="email" name="email" required >
+                <p></p>
+                Password: <input type="password" name="password" required>
+                <p></p>
+                Confirm Password: <input type="password" name="passwordconfirm" required>
+                <p></p>
+                <button type="submit" name="create">Create Account</button>
+            </td>
+            <td></td>
+        </table>
+    </form>
+
+{% endblock %}

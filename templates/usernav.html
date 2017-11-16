@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='navstyle.css')}}">
+    </head>
+    <h1>BAECon Buddies</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="/usermenu" class="menu">Menu</a>
+            <a href="/logout" class="logout">Logout</a>
+            <a href="/viewprofile" class="profile">Profile</a>
+            <a href="/user/viewcart" class="cart">Cart</a>
+        </div>
+    <body bgcolor= #addebd>
+        {%  block body %}{% endblock %}
+    </body>
+</html>

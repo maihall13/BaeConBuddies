@@ -1,0 +1,58 @@
+{% extends 'nav.html' %}
+{% block body %}
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='cartstyle.css') }}">
+    </head>
+
+    <form id="item" action = "{{url_for('savecart_page')}}" method = "POST">
+        <table class = "sturdy">
+
+            <td></td>
+
+            <td>
+                {% for item in cart %}
+                    <table class = "sturdy2">
+                        <td>
+                        <img style="width: 155px; height:130px"src={{ item[2]}}>
+                        </td>
+
+                        <td>
+                            <h4>{{ item[1]}}</h4>
+                            <h4>{{ item[3]}}</h4>
+                            Quantity: <input type="number"
+                                             name = "quantity"
+                                             id = "quantity"
+                                             min="0"
+                                             value={{item[4]}}>
+                        </td>
+
+                        <td>
+                        <button type="submit" value={{item[0]}} name="save">Save</button>
+                        <button type="button" id="edit">Edit</button>
+                        </td>
+                    </table>
+                {% endfor %}
+            </td>
+            <td>
+            </td>
+        </table>
+    </form>
+
+    <p id = "demo"></p>
+
+    <button id="checkout" style="margin-left: 44%; text-decoration: none;"><a href="/checkout">Check Out</a></button>
+
+    <script>
+
+    window.onload = function (){
+        varname = "{{ cart }}";
+        if (varname.length <= 2){
+            document.getElementById("demo").innerHTML = "There are no items in your cart";
+            document.getElementById('checkout').style.visibility="hidden";}
+        else
+            {document.getElementById("demo").innerHTML = "";}
+    };
+
+    </script>
+
+{% endblock %}

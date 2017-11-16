@@ -1,0 +1,89 @@
+h4 {
+    margin-left: 41%;
+    font-family: "Copperplate Gothic Light";
+    font-size: 30px;
+
+}
+
+h2 {
+    margin-left: 38%;
+    font-family: "Copperplate Gothic Light";
+    font-size: 40px;
+    color: #06233b;
+}
+
+input {
+    height: 20px
+}
+
+p {
+    height: 10px;
+}
+
+table {
+    margin: 15px 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.sturdy td:nth-child(1),.sturdy td:nth-child(3) {
+    width: 20%;
+}
+
+.sturdy td:nth-child(2) {
+    width: 60%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Copperplate Gothic Light";
+    font-size: 17px;
+   /* border: 1px solid black;*/
+}
+
+.centerupdate {
+    margin-left: 40%;
+}
+
+.centerdelete {
+    margin-left: 40.1%;
+}
+
+
+li{
+    display: block;
+    margin-left: 40%;
+    width: 170px;
+    text-align: center;
+    font-family: "Copperplate Gothic Light";
+    font-size: 15px;
+    color: #06233b;
+
+}
+
+.garabage {
+    width: 16px;
+    height: 16px;
+
+}
+
+
+button {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #ce6e5c ;
+    text-decoration: none;
+    color: #06233b;
+    font-family: "Copperplate Gothic Light";
+}
+
+button:hover{
+    background-color: white;
+    color: #ce6e5c;
+}

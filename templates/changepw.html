@@ -1,0 +1,27 @@
+{% extends 'usernav.html' %}
+{% block body %}
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='profilestyle.css') }}">
+    </head>
+    <form action = "{{url_for('savechange_password')}}" method = "POST">
+        <h2>Change Password</h2>
+        <table class = "sturdy">
+            <td></td>
+            <td>
+                {{ error }}
+                <p></p>
+                Old Password: <input type="password" name="old_password">
+                <p></p>
+                New Password: <input type="password" name="new_password">
+                <p></p>
+                Confirm Password: <input type="password" name = 'confirm_password'>
+            </td>
+            <td></td>
+        </table>
+
+            <p></p>
+        <section>
+            <button name="update">Change Password</button>
+        </section>
+    </form>
+{% endblock %}

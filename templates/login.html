@@ -1,0 +1,30 @@
+{% extends 'nav.html' %}
+{% block body %}
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='checkoutstyle.css') }}">
+    </head>
+    <h2>Login In</h2>
+
+    <form action = "{{url_for('user_page')}}" method = "POST">
+        <table class = "sturdy">
+            <td></td>
+
+            <td>
+                <p>{{ error }}</p>
+            Username<input type="text" name = "email" required>
+                <p></p>
+            Password<input type="password" name="password" required>
+                <p></p>
+            <button type="submit" name="loginform">Login</button>
+            </td>
+
+            <td></td>
+        </table>
+    </form>
+
+    <form action = "{{url_for('newuser_page')}}" method = "POST">
+        <button type="submit" name="new">Create Account</button>
+    </form>
+
+
+{% endblock %}

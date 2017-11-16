@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='navstyle.css')}}">
+    </head>
+    <h1>BAECon Buddies</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="/usermenu/return" class="menu">Menu</a>
+            <a href="/logout" class="logout">Logout</a>
+            <a href="/viewprofile" class="profile">Profile</a>
+            <a href="/viewusercart" class="cart">Cart</a>
+        </div>
+
+
+
+    <body bgcolor= #addebd >
+        <head>
+            <link rel="stylesheet" href="{{ url_for('static', filename='confirmedstyle.css') }}">
+        </head>
+
+        <h3>
+            Order Confirmed! Your meal is on it's way!
+        </h3>
+        <h4>
+            Delivery time: 22 minutes
+        </h4>
+        <p style="text-align: center">
+            Order Number: {{ msg}}
+        </p>
+        <button style="margin-left:45%; text-decoration: none"><a href="/usermenu/return">Menu</a></button>
+    </body>
+    {{ test }}
+</html>

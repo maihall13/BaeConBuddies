@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+    font-family: "Buxton Sketch";
+    font-size: 100px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: #06233b;
+
+}
+
+
+
+/* Adds background color to the top navigation */
+.topnav {
+    background-color: #ce6e5c ;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #06233b;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 27px;
+    font-family: "Copperplate Gothic Light";
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: #ce6e5c;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: white;
+    color: #ce6e5c;
+}
+
+button {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #ce6e5c ;
+    text-decoration: none;
+    color: #06233b;
+    font-family: "Copperplate Gothic Light";
+}
+
+button:hover{
+    background-color: white;
+    color: #ce6e5c;
+}
+
+a {
+    text-decoration: none;
+}

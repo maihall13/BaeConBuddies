@@ -1,0 +1,61 @@
+h2 {
+    margin-left: 45%;
+    font-family: "Copperplate Gothic Light";
+    font-size: 36px;
+    color: #06233b;
+    padding: 0px 0px 0px 0px;
+}
+
+p {
+    height: 7px;
+    font-size: 16px;
+    font-family: "Copperplate Gothic Light";
+    color: #06233b;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.sturdy td:nth-child(1) {
+    width: 25%;
+}
+
+.sturdy td:nth-child(2) {
+    width: 50%;
+    text-align: center;
+    font-family: "Copperplate Gothic Light";
+    font-size: 17px;
+    color: #06233b;
+}
+
+.sturdy td:nth-child(3) {
+    width: 25%;
+}
+
+input {
+    width: 50%;
+    height: 20px
+}
+
+button {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #ce6e5c ;
+    text-decoration: none;
+    color: #06233b;
+    font-family: "Copperplate Gothic Light";
+}
+
+button:hover{
+    background-color: white;
+    color: #ce6e5c;
+}
+
+select {
+    overflow: auto;
+}
